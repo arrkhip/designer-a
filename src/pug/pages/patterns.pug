@@ -1,0 +1,20 @@
+extends ../layout/layoutBase.pug
+
+include ../../blocks/pattern/pattern
+//- include ../../blocks/header/header
+//- include ../../blocks/footer/footer
+	
+block content
+	- var page = 'catalog';
+
+	+b.patterns-page
+		+e.promo
+			.wrap
+				h2 «Designer-a»
+				p На данной странице представленны базовые элементы сайта.
+
+		+e.content
+			+pattern('Header')
+				//- +header()
+			+pattern('Typography')
+

@@ -1,0 +1,17 @@
+// Файлы сторонних библиотек
+@import 'vendor/normalize/normalize.scss';
+@import 'vendor/slick-slider/slick.scss';
+
+// Общие файлы стилей
+@import 'global/variables.scss';
+@import 'global/font.scss';
+@import 'global/mixins.scss';
+@import 'global/grid.scss';
+@import 'global/base.scss';
+
+// Стилевые файлы БЭМ-блоков
+@import '../blocks/btn/btn.scss';
+@import '../blocks/pattern/pattern.scss';
+
+@import '../blocks/pages/index-page/index-page.scss';
+@import '../blocks/pages/patterns-page/patterns-page.scss';

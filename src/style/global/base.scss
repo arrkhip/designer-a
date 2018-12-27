@@ -1,0 +1,114 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+  font: 400 1.4rem/1 $font-main;
+  color: $grey--dark;
+  background-color: $white;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+  vertical-align: top; 
+}
+
+a:focus,
+button:focus,
+img:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto; 
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 4.5rem;
+
+  &:focus {
+    border-bottom-color: $yellow;
+  }
+
+  &+& {
+    margin-top: 20px;
+  }
+
+  // @include input-placeholder {
+  //   color:  rgba(65, 61, 75, 0.5);
+  // }
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  //   @include input-placeholder {
+  //   color:  rgba(65, 61, 75, 0.5);
+  // }
+}
+
+input:focus, 
+textarea:focus {
+  outline: none; 
+}
+
+input[type="text"]:focus::-webkit-input-placeholder { color: transparent; }
+input[type="text"]:focus::-moz-placeholder          { color: transparent; }
+input[type="text"]:focus:-moz-placeholder           { color: transparent; }
+input[type="text"]:focus:-ms-input-placeholder      { color: transparent; }
+
+input[type="tel"]:focus::-webkit-input-placeholder { color: transparent; }
+input[type="tel"]:focus::-moz-placeholder          { color: transparent; }
+input[type="tel"]:focus:-moz-placeholder           { color: transparent; }
+input[type="tel"]:focus:-ms-input-placeholder      { color: transparent; }
+
+textarea:focus::-webkit-input-placeholder           { color: transparent; }
+textarea:focus::-moz-placeholder                    { color: transparent; }
+textarea:focus:-moz-placeholder                     { color: transparent; }
+textarea:focus:-ms-input-placeholder                { color: transparent; }
+
+// ::-webkit-input-placeholder                         { color: fade(@grey-dark, 50%); }
+// ::-moz-placeholder                                  { color: fade(@grey-dark, 50%); }
+// :-moz-placeholder                                   { color: fade(@grey-dark, 50%); }
+// :-ms-input-placeholder                              { color: fade(@grey-dark, 50%); }
+
+.scroll-hidden {
+  overflow: hidden;
+  padding-right: 17px;
+}
+
+.hidden {
+  display: none;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-content {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  flex: 0 0 auto;
+}
+
+
+
