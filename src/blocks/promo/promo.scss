@@ -1,0 +1,98 @@
+.promo {
+	padding-top: 232px;
+	padding-bottom: 383px;
+
+	background: url('../img/promo-bg.png') no-repeat center bottom / cover;
+
+	&__info {
+		max-width: 645px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.headline {
+		margin-bottom: 30px;
+
+		&__title {
+			margin-bottom: 10px;
+			font-size: 7.9rem;
+			color: #fff;
+
+			&::before,
+			&::after {
+				background-color: #fff;
+			}
+		}
+
+		&__descr {
+			font-size: 2.8rem;
+			color: #fffb8f;
+		}
+	}
+
+	&__descr {
+		margin-bottom: 35px;
+		font: 300 1.6rem/2.4rem $font-main;
+		color: $white;
+	}
+
+	&__btn {
+		height: 40px;
+		padding: 0 45px;
+	}
+
+	@include width-md {
+		padding-top: 150px;
+		padding-bottom: 280px;
+
+		.headline {
+
+			&__title {
+				font-size: 5.9rem;
+			}
+
+			&__descr {
+				font-size: 2.4rem;
+			}
+
+		}
+	}
+
+	@include width-sm {
+		padding-top: 100px;
+		padding-bottom: 200px;
+
+		.headline {
+
+			&__title {
+				font-size: 4.9rem;
+			}
+
+			&__descr {
+				font-size: 2rem;
+			}
+		}
+
+		&__descr {
+			font-size: 1.5rem;
+		}
+	}
+
+	@include width-xs {
+		padding-top: 80px;
+		padding-bottom: 180px;
+
+		.headline {
+
+			&__title {
+				margin-bottom: 15px;
+				font-size: 3rem;
+			}
+
+			&__descr {
+				font-size: 1.2rem;
+			}
+
+		}
+	}
+}

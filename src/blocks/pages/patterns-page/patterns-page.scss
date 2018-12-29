@@ -4,22 +4,21 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: #fd961b;
 		height: 350px;
 		margin-bottom: 100px;
-		background: $grey url(../img/about-bg.png) no-repeat center / cover;
+		background-color: $grey;
 
 		h2 {
 			margin-bottom: 20px;
 			font-weight: 900;
 			font-size: 6rem;
 			letter-spacing: 2px;
-			color: #fff;
+			color: $yellow;
 		}
 
 		p {
 			font-size: 2rem;
-			color: #ab5900;
+			color: $grey--dark;
 		}
 	}
 

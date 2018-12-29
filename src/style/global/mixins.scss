@@ -1,4 +1,10 @@
 //@media
+@mixin width-xl {
+  @media (max-width: #{$width-xl}) {
+    @content;
+  }
+}
+
 @mixin width-lg {
   @media (max-width: #{$width-lg}) {
     @content;

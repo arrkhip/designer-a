@@ -3,13 +3,13 @@ extends ../layout/layoutBase.pug
 include ../../blocks/pattern/pattern
 //- include ../../blocks/header/header
 //- include ../../blocks/footer/footer
+include ../../blocks/promo/promo
 	
 block content
-	- var page = 'catalog';
 
 	+b.patterns-page
 		+e.promo
-			.wrap
+			.grid
 				h2 «Designer-a»
 				p На данной странице представленны базовые элементы сайта.
 
@@ -17,4 +17,7 @@ block content
 			+pattern('Header')
 				//- +header()
 			+pattern('Typography')
+
+			+pattern('Promo')
+				+promo()
 

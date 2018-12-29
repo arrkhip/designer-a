@@ -1,0 +1,62 @@
+.headline {
+	text-align: center;
+
+	&__title {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 20px;
+		font-size: 4.8rem;
+		font-weight: 900;
+		letter-spacing: 4.8px;
+		text-transform: uppercase;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			width: 30px;
+			height: 2px;
+			background-color: #292928;
+		}
+
+		&::before {
+			left: -50px;
+		}
+
+		&::after {
+			right: -50px;
+		}
+	}
+
+	&__descr {
+		font-size: 2.8rem;
+		font-weight: 300;
+		letter-spacing: 5.6px;
+		text-transform: uppercase;
+		color: $yellow;
+	}
+
+	@include width-sm {
+
+		&__title {
+			font-size: 3.8rem;
+		}
+
+		&__descr {
+			font-size: 1.8rem;
+		}
+	}
+
+	@include width-xs {
+
+		&__title {
+			margin-bottom: 15px;
+			font-size: 2.4rem;
+		}
+
+		&__descr {
+			font-size: 1.4rem;
+		}
+	}
+}
