@@ -1,0 +1,59 @@
+.card-service {
+	width: 100%;
+	max-width: 250px;
+	padding-top: 35px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: lighten($grey, 0.5);
+
+	&__icon {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 15px;
+		fill: rgba(37, 37, 37, 0.35);
+	}
+
+	&__title {
+		margin-bottom: 15px;
+		font-size: 1.8rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	&__download {
+		text-decoration: none;
+
+		span {
+			font-size: 1.3rem;
+			font-weight: 300;
+			color: rgba(37, 37, 37, 0.35);
+			@include trs();
+		}
+
+		svg {
+			width: 15px;
+			height: 15px;
+			fill: $grey--dark;
+			@include trs();
+		}
+
+		&:hover {
+
+			span {
+				color: $yellow;
+			}
+
+			svg {
+				fill: $yellow;
+			}
+		}
+	}
+
+	@include width-lg {
+		max-width: 230px;
+
+		&__title {
+			font-size: 1.7rem;
+		}
+	}
+}

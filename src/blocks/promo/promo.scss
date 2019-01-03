@@ -1,7 +1,6 @@
 .promo {
 	padding-top: 232px;
 	padding-bottom: 383px;
-
 	background: url('../img/promo-bg.png') no-repeat center bottom / cover;
 
 	&__info {
@@ -14,7 +13,7 @@
 		margin-bottom: 30px;
 
 		&__title {
-			margin-bottom: 10px;
+			margin-bottom: 16px;
 			font-size: 7.9rem;
 			color: #fff;
 
@@ -92,7 +91,6 @@
 			&__descr {
 				font-size: 1.2rem;
 			}
-
 		}
 	}
 }

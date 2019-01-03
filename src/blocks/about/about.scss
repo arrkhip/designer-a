@@ -1,0 +1,76 @@
+.about {
+	padding-bottom: 45px;
+
+	&__person {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-top: 20px;
+
+		&-banner {
+			margin-left: 45px;
+		}
+
+		&-info {
+			width: 100%;
+			max-width: 480px;
+			padding-top: 25px;
+			
+			p {
+				line-height: 2.4rem;
+				letter-spacing: 1.6px;
+
+				&:not(:first-child) {
+					margin-top: 25px;
+				}
+			}
+
+			span {
+				display: inline-block;
+				margin-top: 35px;
+				font-size: 1.8rem;
+				font-weight: 400;
+				letter-spacing: 1.7px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.card-service {
+		margin-top: 30px;
+	}
+
+	&__btn {
+		margin-top: 30px;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+	@include width-md {
+
+		&__person {
+			flex-direction: column;
+			align-items: center;
+
+			&-banner {
+				margin-left: 0;
+				max-width: 200px;
+			}
+		}
+
+		&__list {
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+		}
+		.card-service {
+			max-width: 250px;
+		}
+	}
+}

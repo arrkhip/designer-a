@@ -1,0 +1,21 @@
+include ../../blocks/card-service/card-service
+
+
+mixin about() 
+	+b.SECTION.about#about
+		.grid
+			+headline('Обо мне', 'История и навыки ')
+			+e.person
+				+e.person-banner
+					img(src="img/person-banner.png", alt="")
+				+e.person-info
+					p Меня зовут Анастасия, - я дизайнер. Работаю более 3-ех лет в сфере веб дизайна, графического дизайна и иллюстрации. Базовое художественное образование получила в Донецкой школе искусств №9. 
+					p Инструментарий Adobe (Photoshop и Illustrator) освоила самостоятельно , набивая руку и портфолио  на 99 дизайн там собственно и заполучила основных постоянных клиентов. Около года работала в Курском ведущем рекламном агентстве Юнион-К (unionk.ru).
+					span услуги:
+
+			+e.list
+				+card-service('graphic', 'Веб Дизайн')
+				+card-service('flyer', 'Графический Дизайн')
+				+card-service('wacom', 'Иллюстрации')
+				+card-service('drama', 'Персонажи')
+			+e.BUTTON.btn.btn заказать

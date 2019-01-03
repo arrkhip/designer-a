@@ -1,0 +1,9 @@
+mixin card-service(icon, title) 
+	+b.card-service
+		+e.SVG.icon
+			use(xlink:href="img/sprite.svg#" + icon)
+		+e.title= title
+		+e.A.download(href="others/bref.pdf", download)
+			span (Cкачать бриф)
+			svg
+				use(xlink:href="img/sprite.svg#download")
