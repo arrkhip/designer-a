@@ -1,7 +1,11 @@
 extends ../layout/layoutBase.pug
 
 //- include ../../blocks/header/header
+include ../../blocks/promo/promo
+include ../../blocks/about/about
 
 	
 block content
+	+promo()
+	+about()
 	
