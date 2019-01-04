@@ -1,0 +1,48 @@
+include ../../blocks/headline/headline
+
+mixin portfolio() 
+	+b.SECTION.portfolio
+		+b.SECTION.work--wine
+			+headline('Портфолио', 'Лучшее и разное')
+			+e.grid.grid
+				+e.banner
+					img(src="img/work-wine-banner.png", alt="")
+				+e.info
+					+e.logo
+						img(src="img/work-wine-logo.png", alt="")
+					+e.title Дизайн сайта для<br>винного клуба США 
+					+e.P.descr Лендинг выполнен в элегантном стиле - Lux, что должно подчеркнуть уникальность и изысканность клуба
+					+e.A.btn.btn(href="https://www.behance.net/gallery/72478807/Elegant-web-site-for-wine-club-Luxury-landing-page", target="_blank") подробнее
+		+b.SECTION.work--arkhip
+			+e.grid.grid
+				+e.info
+					+e.logo
+						img(src="img/work-arkhip-logo.png", alt="")
+					+e.title Персональный брендинг для<br>“фронт-энд девелопера”
+					+e.P.descr Лендинг выполнен в холодном выдержанном стиле, где основное внимание акцентируется на технологиях и професионализме. Был разработан логотип, визитка,лендинг и презентация.
+					+e.A.btn.btn(href="https://www.behance.net/gallery/70087337/Personal-branding-Front-end-developer-Web-Logo", target="_blank") подробнее
+				+e.banner
+					img(src="img/work-arkhip-banner.png", alt="")
+		+b.SECTION.work--santa
+			+e.grid.grid
+				+e.banner
+					img(src="img/work-santa-banner.png", alt="")
+				+e.info
+					+e.title Digital Art 2018.<br>Селфи Санта Клауса
+					+e.P.descr Растровая иллюстрация к Новому году. В 2018 у меня появился графический планшет: спасибо Wacom Intuos.
+					+e.A.btn.btn(href="https://www.behance.net/gallery/59583149/Santa-Claus-selfie-New-year-Christmas-Dog", target="_blank") подробнее
+				
+		+b.SECTION.work--art
+			+e.grid.grid
+				+e.info
+					+e.title Векторные иллюстрации
+					+e.P.descr Серия иллюстраций о любви. Все в стиле Speed Art, мило нежно и есть на Shutterstock
+					+e.A.btn.btn(href="https://www.behance.net/gallery/68343871/Offended-Cupid-Capricious-infant", target="_blank") подробнее
+				+e.banner
+					img(src="img/work-art-banner.png", alt="")
+		+e.A.link(href="https://www.behance.net/designer-a", target="_blank")
+			+e.SVG.link-i-be
+				use(xlink:href="img/sprite.svg#be")
+			+e.SPAN.link-text Больше моих работ
+			+e.SVG.link-i-arrow
+				use(xlink:href="img/sprite.svg#arrow")

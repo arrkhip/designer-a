@@ -20,7 +20,6 @@ body {
 }
 
 
-
 * {
   box-sizing: border-box;
   vertical-align: top; 
@@ -37,6 +36,10 @@ h6 {
 
 p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:focus,

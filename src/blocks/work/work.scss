@@ -1,0 +1,131 @@
+.work {
+	position: relative;
+	background-color: $grey;
+
+	&__grid {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		z-index: 1;
+	}
+
+	&__banner {
+
+	}
+
+	&__info {
+		width: 100%;
+	}
+
+	&__title,
+	&__descr {
+		padding-left: 10px;
+	}
+
+	&__title {
+		margin-bottom: 15px;
+		font-size: 1.8rem;
+		line-height: 2.4rem;
+		letter-spacing: 1.8px;
+	}
+
+	&__descr {
+		margin-bottom: 40px;
+		font-weight: 200;
+		line-height: 2.4rem;
+		letter-spacing: 0.8px;
+	}
+
+	&__btn {
+
+	}
+
+	&--wine {
+		padding-top: 65px;
+		
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 575px;
+			background: url('../img/work-wine-bg.png') no-repeat center/cover;
+		}
+
+		.work {
+
+			&__info {
+				max-width: 298px;
+				color: $white;
+			}
+
+			&__logo {
+				margin-top: 30px;
+				margin-left: -73px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	&--arkhip {
+
+		.work {
+
+			&__logo {
+				margin-top: 90px;
+				margin-bottom: 40px;
+			}
+
+			&__info {
+				max-width: 455px;
+			}
+		}
+	}
+
+	&--santa {
+		padding-top: 75px;
+		padding-bottom: 25px;
+		background-color: $white;
+
+		.work {
+
+			&__grid {
+				align-items: center;
+			}
+
+			&__info {
+				max-width: 275px;
+			}
+		}
+	}
+
+	&--art {
+		padding-top: 100px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 55px;
+			background-color: $white;
+		}
+
+		.work {
+
+			&__info {
+				padding-top: 55px;
+				max-width: 262px;
+			}
+
+			&__banner {
+				position: relative;
+				right: -50px;
+			}
+		}
+
+	}
+}

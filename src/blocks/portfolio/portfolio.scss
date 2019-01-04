@@ -1,0 +1,43 @@
+.portfolio {
+	border-bottom: 1px solid rgba(41, 41, 40, 0.1);
+
+	.headline__title {
+		color: $white;
+
+		&::before,
+		&::after {
+			background-color: $white;
+		}
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		padding: 70px 0;
+		margin-left: 50%;
+		transform: translateX(-50%);
+
+		&-i-be {
+			width: 31px;
+			height: 31px;
+			fill: $yellow;
+			margin-right: 15px;
+		}
+
+		&-text {
+			display: inline-block;
+			margin-right: 15px;
+			font-size: 1.8rem;
+			letter-spacing: 1.8px;
+			text-transform: uppercase;
+			border-bottom: 1px solid $grey--dark;
+			color: $grey--dark;
+		}
+
+		&-i-arrow {
+			width: 20px;
+			height: 20px;
+			fill: $grey--dark;
+		}
+	}
+}
