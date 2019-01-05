@@ -1,0 +1,24 @@
+.contacts {
+	padding-top: 65px;
+	padding-bottom: 50px;
+	
+	text-align: center;
+
+	&__descr {
+		max-width: 470px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+		margin: auto;
+		font-weight: 200;
+		line-height: 2.4rem;
+		letter-spacing: .8px;
+	}
+
+	&__box {
+		text-align: center;
+	}
+
+	&__btn {
+		margin-top: 40px;
+	}
+}
