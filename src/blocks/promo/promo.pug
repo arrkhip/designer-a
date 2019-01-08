@@ -3,6 +3,28 @@ include ../../blocks/headline/headline
 mixin promo() 
 	+b.SECTION.promo
 		.grid
+			+e.social
+				+e.A.social-link(href="https://www.behance.net/designer-a", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#be")
+				+e.A.social-link(href="https://dribbble.com/m-w-e", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#dribble")
+				+e.A.social-link(href="https://www.linkedin.com/in/mushroomwitheyes/", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#in")
+				+e.A.social-link(href="https://vk.com/stasyayayaya", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#vk")
+				+e.A.social-link(href="https://www.facebook.com/anastaciaitisme", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#fb")
+				+e.A.social-link(href="https://twitter.com/designeracross", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#tw")
+				+e.A.social-link(href="https://www.instagram.com/designer.a.cross/", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#instagram")
 			+e.info
 				+headline('Дизайн', 'Для вашего бизнеса')
 				+e.P.descr Дизайн сайтов (UI/UX), Графический дизайн (дизайн визиток, баннеров, штендеров, флаеров и др.) Современные иллюстрации, Брендинг, Дизайн логотипов, Фирменного стиля - Упаковока для вашего бизнеса.

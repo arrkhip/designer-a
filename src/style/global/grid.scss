@@ -1,13 +1,9 @@
 .grid {
-  max-width: 1650px;
+  max-width: 1170px;
   min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-
-  @include width-xl {
-    max-width: 1170px;
-  }
 
   @include width-lg {
     max-width: 960px;
