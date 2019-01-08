@@ -1,6 +1,6 @@
 extends ../layout/layoutBase.pug
 
-//- include ../../blocks/header/header
+include ../../blocks/header/header
 include ../../blocks/promo/promo
 include ../../blocks/about/about
 include ../../blocks/portfolio/portfolio
@@ -9,6 +9,7 @@ include ../../blocks/footer/footer
 
 	
 block content
+	+header()
 	+promo()
 	+about()
 	+portfolio()

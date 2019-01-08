@@ -1,0 +1,49 @@
+include ../../blocks/svg-icon/svg-icon
+
+mixin header
+	+b.HEADER.header
+		+e.grid.grid
+			+e.social
+				+e.SVG.social-icon
+					use(xlink:href="img/sprite.svg#share")
+				+e.social-list
+					+e.A.social-link(href="https://www.behance.net/designer-a", target="_blank")
+						svg
+							use(xlink:href="img/sprite.svg#be")
+					+e.A.social-link(href="https://dribbble.com/m-w-e", target="_blank")
+						svg
+							use(xlink:href="img/sprite.svg#dribble")
+					+e.A.social-link(href="https://www.linkedin.com/in/mushroomwitheyes/", target="_blank")
+						svg
+							use(xlink:href="img/sprite.svg#in")
+					+e.A.social-link(href="https://vk.com/stasyayayaya", target="_blank")
+						svg
+							use(xlink:href="img/sprite.svg#vk")
+					+e.A.social-link(href="https://www.facebook.com/anastaciaitisme", target="_blank")
+						svg
+							use(xlink:href="img/sprite.svg#fb")
+					+e.A.social-link(href="https://twitter.com/designeracross", target="_blank")
+						svg
+							use(xlink:href="img/sprite.svg#tw")
+					+e.A.social-link(href="https://www.instagram.com/designer.a.cross/", target="_blank")
+						svg
+							use(xlink:href="img/sprite.svg#instagram")
+
+
+			+e.A.logo(href="index.html")
+				img(src="img/logo-white.svg", alt="")
+			+e.switch.js-header__switch
+				span
+			+e.inner
+				+e.NAV.nav
+					+e.UL.nav-list
+						+e.LI.nav-item
+							a.header__nav-link(href="#") Главная
+						+e.LI.nav-item
+							a.header__nav-link(href="#") Обо мне
+						+e.LI.nav-item
+							a.header__nav-link(href="#") Портфолио
+						+e.LI.nav-item
+							a.header__nav-link(href="#") Контакты
+						
+				
