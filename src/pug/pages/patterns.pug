@@ -2,7 +2,7 @@ extends ../layout/layoutBase.pug
 
 include ../../blocks/pattern/pattern
 //- include ../../blocks/header/header
-//- include ../../blocks/footer/footer
+include ../../blocks/footer/footer
 include ../../blocks/promo/promo
 include ../../blocks/about/about
 include ../../blocks/card-service/card-service
@@ -20,7 +20,13 @@ block content
 		+e.content
 			+pattern('Header')
 				//- +header()
+
+			+pattern('Footer')
+				+footer()
+
 			+pattern('Typography')
+				.grid
+					.bubbly-button Заказать 
 
 			+pattern('Promo')
 				+promo()

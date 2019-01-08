@@ -1,0 +1,32 @@
+mixin footer() 
+	+b.FOOTER.footer
+		+e.grid.grid
+			+e.A.logo(href="index.html")
+				img(src="img/logo.svg", alt="")
+			+e.social
+				+e.A.social-link(href="https://www.behance.net/designer-a", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#be")
+				+e.A.social-link(href="https://dribbble.com/m-w-e", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#dribble")
+				+e.A.social-link(href="https://www.linkedin.com/in/mushroomwitheyes/", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#in")
+				+e.A.social-link(href="https://vk.com/stasyayayaya", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#vk")
+				+e.A.social-link(href="https://www.facebook.com/anastaciaitisme", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#fb")
+				+e.A.social-link(href="https://twitter.com/designeracross", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#tw")
+				+e.A.social-link(href="https://www.instagram.com/designer.a.cross/", target="_blank")
+					svg
+						use(xlink:href="img/sprite.svg#instagram")
+			+e.A.bref(href="bref", download)
+				span скачать бриф
+				svg
+					use(xlink:href="img/sprite.svg#download")
+		+e.copyright &copy; Copyright 2019
