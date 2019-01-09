@@ -1,12 +1,16 @@
 .portfolio {
 	border-bottom: 1px solid rgba(41, 41, 40, 0.1);
 
-	.headline__title {
-		color: $white;
+	.headline {
+		position: relative;
+		
+		&__title {
+			color: $white;
 
-		&::before,
-		&::after {
-			background-color: $white;
+			&::before,
+			&::after {
+				background-color: $white;
+			}
 		}
 	}
 
