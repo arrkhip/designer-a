@@ -15,31 +15,48 @@
 
 	&__social {
 		display: none;
-		position: relative;
 
 		&-list {
 			position: absolute;
-			top: 30px;
+			top: 100%;
+			left: 0;
 			display: flex;
-			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			padding: 10px 0;
+			border-top: 1px solid #2f2f2f;
+			background-color: #030303
 		}
 
 		&-icon {
-			width: 20px;
-			height: 20px;
-			fill: $white;
+			width: 22px;
+			height: 22px;
+			overflow: hidden;
+
+			svg {	
+				width: 22px;
+				height: 22px;
+				fill: $white;
+				cursor: pointer;
+
+				&:last-child {
+					display: none;
+				}
+			}
 		}
 
 		&-link {
 
-			&:not(:last-child) {
-				margin-bottom: 15px;
-			}
-
 			svg {
-			width: 20px;
-			height: 20px;
-			fill: $white;
+				width: 20px;
+				height: 20px;
+				fill: $white;
+				@include trs();
+
+				&:hover {
+					fill: $yellow;
+				}
 			}
 		}
 	}
@@ -114,15 +131,34 @@
 	}
 
 	@include width-md {
-		height: 50px;
+		position: fixed;
 		height: auto;
-		padding: 0;
+		padding: 5px 0;
+		background-color: #030303;
 
 		&__social {
 			display: block;
 
+			&-link {
+				transform: scale(0);
+				transition: 1s .2s ease;
+			}
+
 			&-list {
-				display: none;
+				visibility: hidden;
+				opacity: 0;
+				transform: translateX(-100%);
+				transition: all .3s ease-in-out;
+
+				&--open {
+					visibility: visible;
+					opacity: 1;
+					transform: translateX(0);
+
+					.header__social-link {
+						transform: scale(1);
+					}
+				}
 			}
 		}
 
@@ -131,14 +167,14 @@
 			transform: translateX(0);
 
 			img {
-				height: 60px;
+				height: 55px;
 			}
 		}
 
 		&__inner {
 			flex-grow: 0;
 			position: fixed;
-			top: 50px;
+			top: 0;
 			left: 0;
 			display: flex;
 			flex-direction: column;
@@ -146,7 +182,7 @@
 			align-items: center;
 			height: 100%;
 			width: 100%;
-			background-color: fade-out($black, 0.25);
+			background-color: fade-out($black, 0.05);
 			visibility: hidden;
 			opacity: 0;
 
@@ -171,6 +207,7 @@
 			margin-left: 20px;
 			overflow: hidden;
 			cursor: pointer;
+			z-index: 11;
 
 			span {
 				position: absolute;

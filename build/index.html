@@ -24,9 +24,14 @@
     <header class="header">
       <div class="header__grid grid">
         <div class="header__social">
-          <svg class="header__social-icon">
-            <use xlink:href="img/sprite.svg#share"></use>
-          </svg>
+          <div class="header__social-icon js-header__social-switch">
+            <svg>
+              <use xlink:href="img/sprite.svg#share"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </div>
           <div class="header__social-list"><a class="header__social-link" href="https://www.behance.net/designer-a" target="_blank">
             <svg>
               <use xlink:href="img/sprite.svg#be"></use>
@@ -56,20 +61,20 @@
         <div class="header__inner">
           <nav class="header__nav">
             <ul class="header__nav-list">
-              <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a>
+              <li class="header__nav-item"><a class="header__nav-link" href="#home">Главная</a>
               </li>
-              <li class="header__nav-item"><a class="header__nav-link" href="#">Обо мне</a>
+              <li class="header__nav-item"><a class="header__nav-link" href="#about">Обо мне</a>
               </li>
-              <li class="header__nav-item"><a class="header__nav-link" href="#">Портфолио</a>
+              <li class="header__nav-item"><a class="header__nav-link" href="#portfolio">Портфолио</a>
               </li>
-              <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a>
+              <li class="header__nav-item"><a class="header__nav-link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <section class="promo">
+    <section class="promo" id="home">
       <div class="grid">
         <div class="promo__social"><a class="promo__social-link" href="https://www.behance.net/designer-a" target="_blank">
           <svg>
@@ -169,7 +174,7 @@
         </button>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <section class="work work--wine">
         <div class="headline">
           <h2 class="headline__title">Портфолио
@@ -235,7 +240,7 @@
         <use xlink:href="img/sprite.svg#arrow"></use>
       </svg></a>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="grid">
         <div class="headline">
           <h2 class="headline__title">Контакты

@@ -4,8 +4,11 @@ mixin header
 	+b.HEADER.header
 		+e.grid.grid
 			+e.social
-				+e.SVG.social-icon
-					use(xlink:href="img/sprite.svg#share")
+				+e.social-icon.js-header__social-switch
+					svg
+						use(xlink:href="img/sprite.svg#share")
+					svg
+						use(xlink:href="img/sprite.svg#close")
 				+e.social-list
 					+e.A.social-link(href="https://www.behance.net/designer-a", target="_blank")
 						svg
@@ -28,8 +31,6 @@ mixin header
 					+e.A.social-link(href="https://www.instagram.com/designer.a.cross/", target="_blank")
 						svg
 							use(xlink:href="img/sprite.svg#instagram")
-
-
 			+e.A.logo(href="index.html")
 				img(src="img/logo-white.svg", alt="")
 			+e.switch.js-header__switch
@@ -38,12 +39,12 @@ mixin header
 				+e.NAV.nav
 					+e.UL.nav-list
 						+e.LI.nav-item
-							a.header__nav-link(href="#") Главная
+							a.header__nav-link(href="#home") Главная
 						+e.LI.nav-item
-							a.header__nav-link(href="#") Обо мне
+							a.header__nav-link(href="#about") Обо мне
 						+e.LI.nav-item
-							a.header__nav-link(href="#") Портфолио
+							a.header__nav-link(href="#portfolio") Портфолио
 						+e.LI.nav-item
-							a.header__nav-link(href="#") Контакты
+							a.header__nav-link(href="#contacts") Контакты
 						
 				

@@ -89,7 +89,7 @@
 	}
 
 	@include width-sm {
-		padding-top: 100px;
+		padding-top: 120px;
 		padding-bottom: 200px;
 
 		.headline {
@@ -109,7 +109,6 @@
 	}
 
 	@include width-xs {
-		padding-top: 80px;
 		padding-bottom: 180px;
 
 		.headline {
