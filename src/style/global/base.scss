@@ -148,5 +148,13 @@ textarea:focus:-ms-input-placeholder                { color: transparent; }
   flex: 0 0 auto;
 }
 
+.parallax {
+  position: absolute;
+
+  @include width-lg {
+    display: none;
+  }
+}
+
 
 

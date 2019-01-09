@@ -2,6 +2,8 @@ include ../../blocks/headline/headline
 
 mixin promo() 
 	+b.SECTION.promo#home
+		.parallax.js-parallax(data-velocity=".3")
+			img(src="img/parallax/lamp.png", alt="") 
 		.grid
 			+e.social
 				+e.A.social-link(href="https://www.behance.net/designer-a", target="_blank")

@@ -3,6 +3,8 @@ include ../../blocks/card-service/card-service
 
 mixin about() 
 	+b.SECTION.about#about
+		.parallax.js-parallax(data-velocity=".05")
+			img(src="img/parallax/horns.png", alt="") 
 		.grid
 			+headline('Обо мне', 'История и навыки ')
 			+e.person

@@ -4,6 +4,11 @@
 	padding-bottom: 383px;
 	background: url('../img/promo-bg.png') no-repeat center bottom / cover;
 
+	.parallax {
+		top: 100px;
+		right: -30px;
+	}
+
 	&__social {
 		position: absolute;
 		top: 190px;

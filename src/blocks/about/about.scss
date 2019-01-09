@@ -1,5 +1,12 @@
 .about {
+	position: relative;
 	padding-bottom: 45px;
+
+	.parallax {
+		bottom: 0;
+		right: 20px;
+		z-index: 1;
+	}
 
 	&__person {
 		display: flex;
